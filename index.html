@@ -118,11 +118,21 @@
         }
         
         .box {
+            align-items: center;
+            align-content: center;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             overflow: hidden;
+            height: 300px;
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+
         }
         
         .box:hover {
@@ -130,19 +140,21 @@
         }
         
         .box-image {
-            width: 100%;
-            height: 200px;
+            display: inline-block;
+            width: 65%;
+            height: 65%;
             object-fit: cover;
+            height: auto;
         }
-        
+
         .box-link {
-            display: block;
             padding: 15px;
             text-align: center;
             color: #3498db;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
+            margin-top: 10px;
         }
         
         .box-link:hover {
@@ -172,7 +184,7 @@
     <div class="content">
         <div class="box">
             <img src="images/message.png" alt="Placeholder" class="box-image">
-            <a href="https://chatroom.webuserent.org" class="box-link" target="_blank">Visit Example</a>
+            <a href="https://chatroom.webuserent.org" class="box-link" target="_blank">Chatroom</a>
         </div>
     </div>
 
